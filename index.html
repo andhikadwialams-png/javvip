@@ -1,17 +1,135 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JAVVIP</title>
-</head>
-<body style="background:#111;color:white;font-family:Arial;text-align:center;">
-    <h1 style="color:red;">🎬 JAVVIP</h1>
-    <h2>Selamat Datang</h2>
-    <p>Website streaming film saya.</p>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JAVVIP</title>
 
-    <button style="background:red;color:white;border:none;padding:15px 30px;border-radius:8px;">
-        ▶ Tonton Sekarang
-    </button>
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#0d0d0d;
+color:white;
+}
+
+header{
+background:#b30000;
+padding:15px;
+font-size:28px;
+font-weight:bold;
+text-align:center;
+}
+
+.banner{
+height:220px;
+background:linear-gradient(to right,#000,#b30000);
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:36px;
+font-weight:bold;
+}
+
+.search{
+padding:20px;
+text-align:center;
+}
+
+.search input{
+width:90%;
+max-width:500px;
+padding:12px;
+border:none;
+border-radius:8px;
+font-size:16px;
+}
+
+.movies{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+gap:20px;
+padding:20px;
+}
+
+.card{
+background:#1b1b1b;
+border-radius:12px;
+overflow:hidden;
+transition:.3s;
+}
+
+.card:hover{
+transform:scale(1.05);
+}
+
+.card img{
+width:100%;
+height:240px;
+object-fit:cover;
+}
+
+.card h3{
+padding:10px;
+}
+
+.watch{
+display:block;
+margin:10px;
+padding:12px;
+background:#b30000;
+color:white;
+text-decoration:none;
+border-radius:8px;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>🎬 JAVVIP</header>
+
+<div class="banner">
+STREAMING FILM
+</div>
+
+<div class="search">
+<input type="text" placeholder="Cari film...">
+</div>
+
+<div class="movies">
+
+<div class="card">
+<img src="https://picsum.photos/300/450?1">
+<h3>Film 1</h3>
+<a class="watch" href="#">▶ Tonton</a>
+</div>
+
+<div class="card">
+<img src="https://picsum.photos/300/450?2">
+<h3>Film 2</h3>
+<a class="watch" href="#">▶ Tonton</a>
+</div>
+
+<div class="card">
+<img src="https://picsum.photos/300/450?3">
+<h3>Film 3</h3>
+<a class="watch" href="#">▶ Tonton</a>
+</div>
+
+<div class="card">
+<img src="https://picsum.photos/300/450?4">
+<h3>Film 4</h3>
+<a class="watch" href="#">▶ Tonton</a>
+</div>
+
+</div>
+
 </body>
 </html>
